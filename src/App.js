@@ -1,14 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Button } from '@mui/material';
+
+import { RouterProvider } from 'react-router-dom';
+import router from './component/router/Router';
+
 
 function App() {
   return (
     <div className="App">
      
-    <Button variant="text">Text</Button>
-<Button variant="contained">Contained</Button>
-<Button variant="outlined">Outlined</Button>
+ <RouterProvider router={router} ></RouterProvider>
     </div>
   );
 }
